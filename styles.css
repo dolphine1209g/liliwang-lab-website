@@ -7,6 +7,26 @@
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
 }
 
+/* Brand logo */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.brand-logo {
+  height: 100px;     /* adjust if needed */
+  width: auto;
+  display: block;
+}
+
+.brand-title {
+  font-family: "Inter", system-ui, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
 * { box-sizing: border-box; }
 html, body { height: 100%; }
 body {
@@ -55,9 +75,10 @@ a:hover { text-decoration: underline; }
 }
 
 .nav-link {
-  font-size: 14px;
-  padding: 6px 8px;
-  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  line-height: 1;
 }
 
 .nav-link:hover {
@@ -306,4 +327,106 @@ a:hover { text-decoration: underline; }
   }
   .nav-toggle { display: inline-block; }
   .header-inner { flex-wrap: wrap; }
+}
+
+/* Active nav link */
+.nav-link-active {
+  background: rgba(0,0,0,0.06);
+  text-decoration: none;
+}
+
+/* Page header */
+.page-hero {
+  padding: 34px 0 18px;
+  border-bottom: 1px solid var(--border);
+  background: #fff;
+}
+
+.page-title {
+  margin: 0;
+  font-size: clamp(34px, 4vw, 46px);
+  letter-spacing: 0.2px;
+}
+
+.page-subtitle {
+  margin: 10px 0 0;
+  color: var(--subtext);
+  max-width: 70ch;
+}
+
+/* Prose */
+.prose {
+  max-width: 78ch;
+}
+.prose p {
+  margin: 0 0 14px;
+  color: var(--subtext);
+  font-size: 16px;
+}
+
+/* Cards grid */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 14px 14px 12px;
+}
+
+.card-title {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.card-text {
+  margin: 0 0 10px;
+  color: var(--subtext);
+}
+
+.card-bullets {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--subtext);
+}
+
+/* List cards (links) */
+.list-cards {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.list-card {
+  display: block;
+  padding: 12px 14px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: #fff;
+}
+
+.list-card:hover {
+  text-decoration: none;
+  background: rgba(0,0,0,0.02);
+}
+
+.list-card-title {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.list-card-text {
+  color: var(--subtext);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
 }

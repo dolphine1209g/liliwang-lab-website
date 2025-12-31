@@ -2,6 +2,12 @@
 
 - .
 - ├─ index.html # home page
+- ├─ research.html
 - ├─ styles.css
 - ├─ script.js
-- ├─ hero[1-4].jpg # pictures
+- ├─ images
+- │ ├─ hero1.jpg # 3 pictures in gallery
+- │ ├─ hero2.jpg
+- │ ├─ hero3.jpg
+- │ ├─ logo.jpg # logo
+- └─ └─ ...
