@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Publications | Wang Lab</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Shared Header (same on every page) -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">
+          <img src="images/logo.jpg" alt="Wang Lab logo" class="brand-logo" />
+        </a>
+
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="research.html" class="nav-link">Research</a>
+          <a href="team.html" class="nav-link">Team</a>
+          <a href="publications.html" class="nav-link nav-link-active">Publication</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="funding.html" class="nav-link">Funding</a>
+          <a href="contact.html" class="nav-link">Contact & Openings</a>
+        </nav>
+
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Page header -->
+      <section class="page-hero">
+        <div class="container">
+          <h1 class="page-title">Publications</h1>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="pub-controls">
+            <div>
+              <div class="pub-controls-label">SELECT Publication</div>
+              <select class="pub-select" id="pubSelect" aria-label="Jump to publication section">
+                <option value="">Jump to…</option>
+                <option value="#research-articles">Research Articles</option>
+                <option value="#reviews">Reviews</option>
+                <option value="#earlier-years">Earlier Years</option>
+              </select>
+            </div>
+
+            <div class="pub-controls-right">
+              <a class="pub-link" href="#" target="_blank" rel="noreferrer">
+                click here for full publication list
+              </a>
+              <div class="pub-note">
+                Lab members in <strong>bold</strong>; # co-first author; ^ co-senior author.
+              </div>
+            </div>
+          </div>
+
+          <!-- Research Articles -->
+          <h2 id="research-articles" class="pub-section-title">Research Articles</h2>
+          <ul class="pub-list">
+            <li class="pub-item">
+              <span class="pub-citation">
+                <strong>LastName A</strong>, LastName B#, LastName C, … Wang L^.
+                Title of the paper goes here. <em>Journal</em>. 2026.
+              </span>
+              <span class="pub-actions">
+                <a href="#" target="_blank" rel="noreferrer">PubMed</a>
+                <a href="#" target="_blank" rel="noreferrer">PDF</a>
+              </span>
+            </li>
+
+            <li class="pub-item">
+              <span class="pub-citation">
+                LastName A, <strong>LastName B</strong>, LastName C. Another title.
+                <em>Journal</em>. 2025.
+              </span>
+              <span class="pub-actions">
+                <a href="#" target="_blank" rel="noreferrer">PubMed</a>
+              </span>
+            </li>
+
+            <li class="pub-item">
+              <span class="pub-citation">
+                LastName A, LastName B. Title. <em>Journal</em>. 2024.
+              </span>
+              <span class="pub-actions">
+                <a href="#" target="_blank" rel="noreferrer">PubMed</a>
+              </span>
+            </li>
+          </ul>
+
+          <!-- Reviews -->
+          <h2 id="reviews" class="pub-section-title">Reviews</h2>
+          <ul class="pub-list">
+            <li class="pub-item">
+              <span class="pub-citation">
+                <strong>LastName A</strong>, LastName B. Review title. <em>Journal</em>. 2025.
+              </span>
+              <span class="pub-actions">
+                <a href="#" target="_blank" rel="noreferrer">PubMed</a>
+              </span>
+            </li>
+          </ul>
+
+          <!-- Earlier years -->
+          <h2 id="earlier-years" class="pub-section-title">2010–2023</h2>
+
+          <details class="pub-year" open>
+            <summary>2023</summary>
+            <ul class="pub-list">
+              <li class="pub-item">
+                <span class="pub-citation">
+                  LastName A#, <strong>LastName B</strong>#. Title. <em>Journal</em>. 2023.
+                </span>
+                <span class="pub-actions">
+                  <a href="#" target="_blank" rel="noreferrer">PubMed</a>
+                </span>
+              </li>
+            </ul>
+          </details>
+
+          <details class="pub-year">
+            <summary>2022</summary>
+            <ul class="pub-list">
+              <li class="pub-item">
+                <span class="pub-citation">
+                  LastName A, LastName B. Title. <em>Journal</em>. 2022.
+                </span>
+                <span class="pub-actions">
+                  <a href="#" target="_blank" rel="noreferrer">PubMed</a>
+                </span>
+              </li>
+            </ul>
+          </details>
+
+          <div class="pub-backtotop">
+            <a href="#top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Back to Top</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Shared Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <img class="footer-logo" src="images/footer-logo.png" alt="Institution logo" />
+        <div class="footer-text">
+          <div>© Wang Lab 2018–2025</div>
+          <div>Email: your-email@institution.edu</div>
+        </div>
+        <div class="footer-links">
+          <a href="#" aria-label="X / Twitter">X</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Jump-to dropdown (like "SELECT Publication")
+      const sel = document.getElementById("pubSelect");
+      if (sel) {
+        sel.addEventListener("change", () => {
+          const v = sel.value;
+          if (!v) return;
+          const el = document.querySelector(v);
+          if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      }
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
