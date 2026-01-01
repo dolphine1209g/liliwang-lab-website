@@ -1,4 +1,4 @@
-# liliwang-lab-website
+# liliwang-lab-website: https://dolphine1209g.github.io/liliwang-lab-website
 
 - .
 - ├─ index.html # home page
