@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact | Wang Lab</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .contact-grid {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 18px;
+        margin-top: 16px;
+      }
+      .card {
+        background: #fff;
+        border-radius: 12px;
+        padding: 16px;
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
+      }
+      .card h3 {
+        margin: 0 0 10px;
+      }
+      .card p {
+        margin: 0 0 10px;
+        line-height: 1.6;
+      }
+      .contact-list {
+        margin: 0;
+        padding-left: 18px;
+      }
+      .contact-list li {
+        margin: 6px 0;
+      }
+      .muted {
+        color: #444;
+      }
+      @media (max-width: 900px) {
+        .contact-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header (same as index.html) -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">
+          <img src="images/logo.jpg" alt="Wang Lab logo" class="brand-logo" />
+        </a>
+
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="research.html" class="nav-link">Research</a>
+          <a href="team.html" class="nav-link">Team</a>
+          <a href="publications.html" class="nav-link">Publication</a>
+          <a href="news.html" class="nav-link">News &amp; Lab Activities</a>
+          <a href="support.html" class="nav-link">Support</a>
+          <a href="contact.html" class="nav-link" aria-current="page">Contact & Openings</a>
+        </nav>
+
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      </div>
+    </header>
+
+    <main id="contact">
+      <section class="section">
+        <div class="container">
+          <h2 class="section-kicker">Contact</h2>
+        </div>
+      </section>
+
+      <section class="section section-muted">
+        <div class="container">
+          <div class="contact-grid">
+            <!-- Left: Openings -->
+            <div class="card">
+              <h3>Join the lab</h3>
+              <p class="muted">
+We are actively recruiting highly motivated graduate students and postdoctoral scientists who are excited to tackle fundamental and translational questions at the forefront of RNA biology and cancer. Our lab investigates how dysregulation of RNA metabolism drives oncogenesis, combining cutting-edge approaches in RNA splicing, RNA epigenetics, cancer biology and high-throughput genetic screening. Trainees in our group work in a highly interdisciplinary, collaborative environment and gain hands-on experience with innovative technologies to address clinically relevant problems with clinical impact.
+              </p>
+
+              <p class="muted">
+                Please email a CV and a brief description of research interests to:
+                <a href="mailto:lw3282@cumc.columbia.edu">lw3282@cumc.columbia.edu</a>
+              </p>
+            </div>
+
+            <!-- Right: Address / Contact -->
+            <div class="card">
+              <h3>Lab address</h3>
+              <ul class="contact-list">
+                <li><strong>Institution:</strong> Columbia University Irving Medical Center</li>
+                <li><strong>Building:</strong> VP&S Building, 10-421 & 10-509</li>
+                <li><strong>Street:</strong> 630 West 168th Street</li>
+                <li><strong>City/State:</strong> New York, NY 10032</li>
+              </ul>
+
+              <hr style="border: none; border-top: 1px solid rgba(0,0,0,0.08); margin: 14px 0" />
+
+              <h3>General contact</h3>
+              <p class="muted" style="margin-bottom: 8px">
+                Email: <a href="mailto:lw3282@cumc.columbia.edu">lw3282@cumc.columbia.edu</a>
+              </p>
+
+              <p class="muted" style="margin-bottom: 0">
+                You can also find updates on our <a href="news.html">News</a> page.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <img
+          class="footer-logo"
+          src="images/institution-logo.png"
+          alt="Institution logo"
+        />
+
+        <div class="footer-text">
+          <div>© Lili Wang Lab 2017–2026</div>
+          <div>Email: <a href="mailto:lw3282@cumc.columbia.edu">lw3282@cumc.columbia.edu</a></div>
+        </div>
+
+        <div class="footer-links">
+          <a
+            href="https://twitter.com/LiliWangLab"
+            aria-label="X / Twitter"
+            target="_blank"
+            rel="noopener"
+          >
+            X
+          </a>
+          <a
+            href="https://www.linkedin.com/in/lili-wang-448a1715/"
+            aria-label="LinkedIn"
+            target="_blank"
+            rel="noopener"
+          >
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

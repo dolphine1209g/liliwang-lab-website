@@ -54,12 +54,38 @@
         display: block;
       }
 
+      .news-photos-v {
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+        margin-top: 12px;
+      }
+
+      .news-photos-v img {
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+        display: block;
+      }
+
+
       @media (max-width: 720px) {
         .news-photos {
           grid-template-columns: 1fr;
         }
         .news-photos img {
           height: 200px;
+        }
+      }
+
+      @media (max-width: 720px) {
+        .news-photos-v {
+          flex-direction: column;
+        }
+
+        .news-photos-v img {
+          width: 100%;
         }
       }
     </style>
@@ -80,7 +106,7 @@
           <a href="publications.html" class="nav-link">Publication</a>
           <a href="news.html" class="nav-link" aria-current="page">News &amp; Lab Activities</a>
           <a href="support.html" class="nav-link">Support</a>
-          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="contact.html" class="nav-link">Contact & Openings</a>
         </nav>
 
         <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
@@ -95,9 +121,6 @@
         <div class="container">
           <h2 class="section-kicker">News &amp; Lab Activities</h2>
           <h1 class="section-title">Latest updates from the Wang Lab</h1>
-          <p class="section-text">
-            Highlights of publications, awards, conferences, and lab life.
-          </p>
         </div>
       </section>
 
@@ -109,38 +132,35 @@
             <article class="news-entry">
               <h3 class="news-month">DEC 2025</h3>
               <p class="news-body">
-                Lab activity highlight — add your update here (e.g., lab outing, conference, invited talk, etc.).
+                ASH 2025, Orlando, FL — The Wang Lab attended the American Society of Hematology (ASH) Annual Meeting & Exposition held in Orlando, Florida.
               </p>
 
               <!-- Optional photos: replace src with your own, or delete this whole div -->
-              <!--
+
               <div class="news-photos" aria-label="News photos">
-                <img src="images/news/2025-12-01.jpg" alt="Lab activity photo 1" />
-                <img src="images/news/2025-12-02.jpg" alt="Lab activity photo 2" />
+                <img src="images/news/IMG_5122.jpg" alt="Lab activity photo 1" />
+                <img src="images/news/IMG_5123.jpg" alt="Lab activity photo 2" />
+                <img src="images/news/IMG_5124.jpg" alt="Lab activity photo 3" />
+                <img src="images/news/IMG_5125.jpg" alt="Lab activity photo 4" />
               </div>
-              -->
+
             </article>
 
             <article class="news-entry">
               <h3 class="news-month">NOV 2025</h3>
               <p class="news-body">
-                Publication / collaboration update — add details and link if applicable.
-                For example:
-                <a href="#" rel="noopener">Read the paper</a>.
+                Lili Wang Lab has officially relocated to Columbia University Medical Center in New York City. We are excited to start this new chapter!
               </p>
+              <div class="news-photos-v" aria-label="News photos">
+                <img src="images/news/IMG_5126.jpg" alt="Lab activity photo 1" />
+                <img src="images/news/IMG_5127.jpg" alt="Lab activity photo 2" />
+              </div>
             </article>
 
             <article class="news-entry">
-              <h3 class="news-month">JUN 2025</h3>
+              <h3 class="news-month">Oct 2025 & Earlier ...</h3>
               <p class="news-body">
-                Funding / award update — add your update here.
-              </p>
-            </article>
-
-            <article class="news-entry">
-              <h3 class="news-month">JAN 2025</h3>
-              <p class="news-body">
-                Lab member milestone — add your update here (e.g., paper accepted, fellowship, graduation).
+                See our X account for more updates: <a href="https://twitter.com/LiliWangLab" target="_blank" rel="noopener">https://twitter.com/LiliWangLab</a>
               </p>
             </article>
 
@@ -150,18 +170,37 @@
       </section>
     </main>
 
-    <!-- Footer (same as index.html) -->
+    <!-- Footer -->
     <footer class="site-footer">
       <div class="container footer-inner">
-        <img class="footer-logo" src="images/footer-logo.png" alt="Institution logo" />
+        <img
+          class="footer-logo"
+          src="images/institution-logo.png"
+          alt="Institution logo"
+        />
+
         <div class="footer-text">
-          <div>© Lili Wang Lab 2018–2025</div>
-          <div>Email: lw3282@cumc.columbia.edu</div>
+          <div>© Lili Wang Lab 2017–2026</div>
+          <div>Email: <a href="mailto:lw3282@cumc.columbia.edu">lw3282@cumc.columbia.edu</a></div>
         </div>
 
         <div class="footer-links">
-          <a href="#" aria-label="X / Twitter">X</a>
-          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          <a
+            href="https://twitter.com/LiliWangLab"
+            aria-label="X / Twitter"
+            target="_blank"
+            rel="noopener"
+          >
+            X
+          </a>
+          <a
+            href="https://www.linkedin.com/in/lili-wang-448a1715/"
+            aria-label="LinkedIn"
+            target="_blank"
+            rel="noopener"
+          >
+            LinkedIn
+          </a>
         </div>
       </div>
     </footer>
