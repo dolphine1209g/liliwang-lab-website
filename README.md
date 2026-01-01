@@ -3,6 +3,7 @@
 - .
 - ├─ index.html # home page
 - ├─ research.html
+- ├─ ...
 - ├─ styles.css
 - ├─ script.js
 - ├─ images
@@ -10,4 +11,6 @@
 - │ ├─ hero2.jpg
 - │ ├─ hero3.jpg
 - │ ├─ logo.jpg # logo
-- └─ └─ ...
+- │ ├─ people/
+- │ ├─ news/
+- └─└─ ...
