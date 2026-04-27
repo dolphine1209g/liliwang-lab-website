@@ -5,90 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>News & Lab Activities | Lili Wang Lab</title>
     <link rel="stylesheet" href="styles.css" />
-
-    <!-- Small, page-only helpers that won't fight your existing CSS -->
-    <style>
-      /* Timeline layout (uses your existing container/section styles) */
-      .news-timeline {
-        display: grid;
-        gap: 18px;
-        margin-top: 14px;
-      }
-
-      .news-entry {
-        background: #fff;
-        border-radius: 12px;
-        padding: 14px 16px;
-        box-shadow: 0 1px 0 rgba(0,0,0,0.04);
-      }
-
-      .news-month {
-        font-weight: 800;
-        letter-spacing: 0.02em;
-        margin: 0 0 8px;
-        text-transform: uppercase;
-      }
-
-      .news-body {
-        margin: 0;
-        line-height: 1.6;
-      }
-
-      .news-body a {
-        text-decoration: underline;
-        text-underline-offset: 2px;
-      }
-
-      .news-photos {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 10px;
-        margin-top: 12px;
-      }
-
-      .news-photos img {
-        width: 100%;
-        height: 220px;
-        object-fit: cover;
-        border-radius: 10px;
-        display: block;
-      }
-
-      .news-photos-v {
-        display: flex;
-        gap: 16px;
-        align-items: flex-start;
-        margin-top: 12px;
-      }
-
-      .news-photos-v img {
-        width: 50%;
-        height: auto;
-        object-fit: cover;
-        border-radius: 10px;
-        display: block;
-      }
-
-
-      @media (max-width: 720px) {
-        .news-photos {
-          grid-template-columns: 1fr;
-        }
-        .news-photos img {
-          height: 200px;
-        }
-      }
-
-      @media (max-width: 720px) {
-        .news-photos-v {
-          flex-direction: column;
-        }
-
-        .news-photos-v img {
-          width: 100%;
-        }
-      }
-    </style>
   </head>
 
   <body>
@@ -129,6 +45,17 @@
           <div class="news-timeline">
             <!-- Copy/paste a block like this for each new item -->
             <article class="news-entry">
+              <h3 class="news-month">APR 2026</h3>
+              <p class="news-body">Happy New Year! The Wang Lab is excited to kick off 2026 with new projects and collaborations.</p>
+              <p class="news-body">1. Welcome Ilana Kara joining us as a postdoctoral fellow!</p>
+              <p class="news-body">2. Erica’s first talk at Columbia University!</p>
+              <div class="news-photos news-photos--crop" aria-label="News photos">
+                <img src="images/news/Kara.jpg" alt="Lab activity photo 1" />
+                <img src="images/news/Erica's 1st Talk.jpg" alt="Lab activity photo 2" />
+              </div>
+            </article>
+
+            <article class="news-entry">
               <h3 class="news-month">DEC 2025</h3>
               <p class="news-body">
                 ASH 2025, Orlando, FL — The Wang Lab attended the American Society of Hematology (ASH) Annual Meeting & Exposition held in Orlando, Florida.
@@ -136,7 +63,7 @@
 
               <!-- Optional photos: replace src with your own, or delete this whole div -->
 
-              <div class="news-photos" aria-label="News photos">
+              <div class="news-photos news-photos--crop" aria-label="News photos">
                 <img src="images/news/IMG_5122.jpg" alt="Lab activity photo 1" />
                 <img src="images/news/IMG_5123.jpg" alt="Lab activity photo 2" />
                 <img src="images/news/IMG_5124.jpg" alt="Lab activity photo 3" />
@@ -150,7 +77,7 @@
               <p class="news-body">
                 Lili Wang Lab has officially relocated to Columbia University Medical Center in New York City. We are excited to start this new chapter!
               </p>
-              <div class="news-photos-v" aria-label="News photos">
+              <div class="news-photos news-photos--natural" aria-label="News photos">
                 <img src="images/news/IMG_5126.jpg" alt="Lab activity photo 1" />
                 <img src="images/news/IMG_5127.jpg" alt="Lab activity photo 2" />
               </div>
